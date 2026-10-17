@@ -98,7 +98,7 @@ const en = {
   ca: {
     eyebrow: 'Why AMCO',
     title: 'Built by Chartered Accountants, not just programmers.',
-    body: 'AMCO Consultants is a firm of Chartered Accountants. Every report, posting and tax rule in AMCO ERP was designed and reviewed by qualified accountants who do this work every day — that is why it is so mature, and why the numbers add up.',
+    body: 'Every report, posting and tax rule in AMCO ERP was designed and reviewed by qualified accountants who do this work every day — that is why it is so mature, and why the numbers add up.',
     points: ['Posting rules reviewed by CAs', 'Pakistani tax law built in', 'Audit-ready records']
   },
   team: {

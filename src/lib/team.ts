@@ -1,5 +1,5 @@
-// ⚠️ PLACEHOLDER TEAM. The names, roles and photos below are samples until the
-// real ones arrive. To replace a person: put their photo in `public/team/`
+// The team (photos edited from the originals: background replaced and colour
+// corrected, no change to faces). To add or replace a person: put their photo in `public/team/`
 // (a portrait, roughly 4:5, e.g. 800 × 1000 px .jpg or .webp), point `photo`
 // at it, and change the name and role in BOTH languages. Add or remove
 // entries freely — the section lays itself out for any number.
@@ -13,48 +13,27 @@ export type TeamMember = {
 
 export const TEAM: TeamMember[] = [
   {
-    photo: '/team/member-1.svg',
-    name: { en: 'Ahmed Khan', ur: 'احمد خان' },
-    role: { en: 'Managing Partner', ur: 'منیجنگ پارٹنر' },
-    credential: 'FCA'
+    photo: '/team/imran-shahzad.webp',
+    name: { en: 'Dr. Imran Shahzad', ur: 'ڈاکٹر عمران شہزاد' },
+    role: { en: 'Director Finance', ur: 'ڈائریکٹر فنانس' },
+    credential: 'FCA · PhD'
   },
   {
-    photo: '/team/member-2.svg',
-    name: { en: 'Sara Malik', ur: 'سارہ ملک' },
-    role: { en: 'Partner, Audit & Tax', ur: 'پارٹنر، آڈٹ اور ٹیکس' },
+    photo: '/team/usama-amjad.webp',
+    name: { en: 'Usama Amjad', ur: 'اسامہ امجد' },
+    role: { en: 'Director Financial & Business Operations', ur: 'ڈائریکٹر فنانشل و بزنس آپریشنز' },
+    credential: 'CA (Finalist) · CBA'
+  },
+  {
+    photo: '/team/rana-tahir-zulqarnain.webp',
+    name: { en: 'Rana Tahir Zulqarnain', ur: 'رانا طاہر ذوالقرنین' },
+    role: { en: 'Director Finance', ur: 'ڈائریکٹر فنانس' },
     credential: 'ACA'
   },
   {
-    photo: '/team/member-3.svg',
-    name: { en: 'Bilal Hussain', ur: 'بلال حسین' },
-    role: { en: 'Head of AMCO ERP', ur: 'سربراہ، ایمکو ای آر پی' }
-  },
-  {
-    photo: '/team/member-4.svg',
-    name: { en: 'Ayesha Siddiqui', ur: 'عائشہ صدیقی' },
-    role: { en: 'Implementation Lead', ur: 'امپلیمنٹیشن لیڈ' },
-    credential: 'ACCA'
-  },
-  {
-    photo: '/team/member-5.svg',
-    name: { en: 'Usman Tariq', ur: 'عثمان طارق' },
-    role: { en: 'Senior Tax Consultant', ur: 'سینئر ٹیکس کنسلٹنٹ' },
-    credential: 'ACA'
-  },
-  {
-    photo: '/team/member-6.svg',
-    name: { en: 'Hina Javed', ur: 'حنا جاوید' },
-    role: { en: 'Audit Manager', ur: 'آڈٹ منیجر' },
-    credential: 'ACCA'
-  },
-  {
-    photo: '/team/member-7.svg',
-    name: { en: 'Faisal Raza', ur: 'فیصل رضا' },
-    role: { en: 'Lead Software Engineer', ur: 'لیڈ سافٹ ویئر انجینئر' }
-  },
-  {
-    photo: '/team/member-8.svg',
-    name: { en: 'Maryam Aslam', ur: 'مریم اسلم' },
-    role: { en: 'Customer Success Manager', ur: 'کسٹمر سکسیس منیجر' }
+    photo: '/team/muhammad-haris-amjad.webp',
+    name: { en: 'Muhammad Haris Amjad', ur: 'محمد حارث امجد' },
+    role: { en: 'Director IT & Business Operations', ur: 'ڈائریکٹر آئی ٹی و بزنس آپریشنز' },
+    credential: 'Software Engineer'
   }
 ]

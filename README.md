@@ -81,7 +81,6 @@ NEXT_PUBLIC_DEMO_REQUEST_URL=http://localhost:4000/api/public/demo-request npm r
 
 ## Still to supply
 
-- **Team names, roles and photos**: the eight people in `src/lib/team.ts` are placeholders, with stand-in pictures in `public/team/`. Replace both there (names and roles in English and Urdu); the section adapts to any number of people.
 - **The videos** for the product page.
 - The Urdu copy should be reviewed by a native speaker before launch.
 

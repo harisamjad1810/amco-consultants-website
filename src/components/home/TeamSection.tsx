@@ -4,8 +4,8 @@ import type { Locale } from '@/i18n/config'
 import { TEAM } from '@/lib/team'
 
 // "Our team" — the people behind the firm and the product, on the light
-// ground. The people themselves are in `src/lib/team.ts` (placeholders until
-// the real names and photos arrive); this file only lays them out.
+// ground. The people themselves are in `src/lib/team.ts`; this file only lays
+// them out.
 
 type Props = {
   locale: Locale
