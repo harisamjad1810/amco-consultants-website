@@ -3,8 +3,9 @@ import type { Dictionary } from '@/i18n/get-dictionary'
 import type { Locale } from '@/i18n/config'
 import { ERP_VIDEOS } from '@/lib/erp-videos'
 
-// Videos of AMCO ERP. Each video downloads only when it is played
-// (`preload="none"`), so the page stays light however many are added.
+// The AMCO ERP video in the page's language. Only its first few hundred KB
+// (duration and first frame, `preload="metadata"`) load with the page; the
+// rest streams when it is played.
 
 type Props = {
   locale: Locale
@@ -12,6 +13,7 @@ type Props = {
 }
 
 export default function VideoSection({ locale, dict }: Props) {
+  const video = ERP_VIDEOS[locale]
   return (
     <section id="videos" className="night-sky relative overflow-hidden py-20 text-fg-2 sm:py-24">
       <div aria-hidden="true" className="grid-lines absolute inset-0" />
@@ -24,17 +26,16 @@ export default function VideoSection({ locale, dict }: Props) {
           <p className="mt-4 text-fg-3 rtl:leading-[2.1]">{dict.body}</p>
         </div>
 
+        {video ? (
+          <figure className="reveal mx-auto mt-10 max-w-4xl overflow-hidden rounded-2xl border border-white/10 bg-ink-850">
+            <video controls preload="metadata" playsInline poster={video.poster} className="aspect-video w-full bg-black">
+              <source src={video.src} type="video/mp4" />
+            </video>
+            <figcaption className="px-4 py-3 text-sm font-semibold text-fg-1 rtl:leading-[1.9]">{video.title}</figcaption>
+          </figure>
+        ) : (
         <div className="mt-10 grid gap-5 md:grid-cols-3">
-          {ERP_VIDEOS.length
-            ? ERP_VIDEOS.map((video) => (
-                <figure key={video.src} className="reveal overflow-hidden rounded-2xl border border-white/10 bg-ink-850">
-                  <video controls preload="none" playsInline poster={video.poster} className="aspect-video w-full bg-black">
-                    <source src={video.src} type="video/mp4" />
-                  </video>
-                  <figcaption className="px-4 py-3 text-sm font-semibold text-fg-1">{video.title[locale]}</figcaption>
-                </figure>
-              ))
-            : dict.placeholders.map((title, index) => (
+          {dict.placeholders.map((title, index) => (
                 <div key={title} className="reveal overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]" style={{ '--delay': `${index * 90}ms` } as CSSProperties}>
                   <div className="relative flex aspect-video items-center justify-center bg-[radial-gradient(circle_at_30%_20%,rgb(255_179_71/0.18),transparent_60%)]">
                     <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-white/10" aria-hidden="true">
@@ -48,6 +49,7 @@ export default function VideoSection({ locale, dict }: Props) {
                 </div>
               ))}
         </div>
+        )}
       </div>
     </section>
   )

@@ -72,7 +72,7 @@ NEXT_PUBLIC_DEMO_REQUEST_URL=http://localhost:4000/api/public/demo-request npm r
 ## Screenshots and videos
 
 - `public/erp/*.webp` are real ERP screens, and `src/lib/erp-screens.json` holds the measured position of each numbered marker. **Re-capture both together** when the ERP's screens change; the marker text is in the dictionaries (`product.tour.screens`).
-- Videos: put MP4s in `public/videos/` and list them in `src/lib/erp-videos.ts`. While that list is empty the page shows "Video coming soon".
+- Videos: one per language — `public/videos/amco-erp-tour-en.mp4` and `amco-erp-tour-ur.mp4` (about 94 MB each), set in `src/lib/erp-videos.ts`. They are the DRAFT renders from `D:\Projects\AMCO-ERP-Videos\out\drafts`; to update, overwrite the files under the same names. A language set to `null` shows "Video coming soon".
 
 ## Brand
 

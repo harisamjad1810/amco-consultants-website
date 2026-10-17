@@ -2,7 +2,6 @@ import Logo from '@/components/brand/Logo'
 import type { Dictionary } from '@/i18n/get-dictionary'
 import type { Locale } from '@/i18n/config'
 import { demoPath, explorePath, homePath } from '@/lib/paths'
-import { ERP_LOGIN_URL } from '@/lib/site'
 
 // The footer, on the same dark sky as the hero: a demo call-to-action card,
 // then the brand, the site's links, the tax authorities and a bottom bar.
@@ -71,12 +70,6 @@ export default function Footer({ locale, dict, tax }: Props) {
             <div className="flex flex-wrap gap-3">
               <a href={demo} className="btn btn-accent">
                 {dict.ctaButton}
-              </a>
-              <a href={ERP_LOGIN_URL} className="btn btn-ghost-dark">
-                {dict.signIn}
-                <svg viewBox="0 0 24 24" className="h-4 w-4 rtl:-scale-x-100" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M7 17 17 7M9 7h8v8" />
-                </svg>
               </a>
             </div>
           </div>

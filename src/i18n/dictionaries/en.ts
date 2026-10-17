@@ -311,7 +311,7 @@ const en = {
     videos: {
       eyebrow: 'Watch',
       title: 'See it in motion',
-      body: 'Short videos of AMCO ERP at work.',
+      body: 'A three-minute tour of AMCO ERP at work.',
       soon: 'Video coming soon',
       placeholders: ['A quick tour of AMCO ERP', 'From sale invoice to tax filing', 'Month-end in minutes']
     }
@@ -324,7 +324,6 @@ const en = {
     ctaTitle: 'See AMCO ERP on your own books',
     ctaBody: 'A free, personal demo on a live company, with real documents — arranged on WhatsApp or by email.',
     ctaButton: 'Request a free demo',
-    signIn: 'Sign in to AMCO ERP',
     explore: 'Explore',
     productHeading: 'AMCO ERP',
     authoritiesHeading: 'Tax authorities',
