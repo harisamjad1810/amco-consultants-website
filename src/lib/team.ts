@@ -31,9 +31,15 @@ export const TEAM: TeamMember[] = [
     credential: 'ACA'
   },
   {
+    photo: '/team/moeiz-ahmad.webp',
+    name: { en: 'Moeiz Ahmad', ur: 'معیز احمد' },
+    role: { en: 'Director Business Operations', ur: 'ڈائریکٹر بزنس آپریشنز' },
+    credential: 'CA (Finalist) · CBA'
+  },
+  {
     photo: '/team/muhammad-haris-amjad.webp',
     name: { en: 'Muhammad Haris Amjad', ur: 'محمد حارث امجد' },
-    role: { en: 'Director IT & Business Operations', ur: 'ڈائریکٹر آئی ٹی و بزنس آپریشنز' },
+    role: { en: 'CEO & Director IT', ur: 'سی ای او اور ڈائریکٹر آئی ٹی' },
     credential: 'Software Engineer'
   }
 ]
