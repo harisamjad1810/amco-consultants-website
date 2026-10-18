@@ -39,7 +39,7 @@ export const TEAM: TeamMember[] = [
   {
     photo: '/team/muhammad-haris-amjad.webp',
     name: { en: 'Muhammad Haris Amjad', ur: 'محمد حارث امجد' },
-    role: { en: 'CEO & Director IT', ur: 'سی ای او اور ڈائریکٹر آئی ٹی' },
+    role: { en: 'Director IT & Business Operations', ur: 'ڈائریکٹر آئی ٹی و بزنس آپریشنز' },
     credential: 'Software Engineer'
   }
 ]
