@@ -46,7 +46,7 @@ export const TEAM: TeamMember[] = [
     photo: '/team/manan-azam.webp',
     name: { en: 'Manan Azam', ur: 'منان اعظم' },
     role: { en: 'Director Business Development', ur: 'ڈائریکٹر بزنس ڈویلپمنٹ' },
-    credential: 'Computer Science'
+    credential: 'Software Engineer'
   },
   {
     photo: '/team/saqib-ali.webp',
@@ -64,6 +64,6 @@ export const TEAM: TeamMember[] = [
     photo: '/team/muhammad-husnain-mubashar.webp',
     name: { en: 'Muhammad Husnain', ur: 'محمد حسنین' },
     role: { en: 'Business Development Manager', ur: 'بزنس ڈویلپمنٹ منیجر' },
-    credential: 'Computer Science'
+    credential: 'Software Engineer'
   }
 ]
