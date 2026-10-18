@@ -41,5 +41,29 @@ export const TEAM: TeamMember[] = [
     name: { en: 'Muhammad Haris Amjad', ur: 'محمد حارث امجد' },
     role: { en: 'Director IT & Business Operations', ur: 'ڈائریکٹر آئی ٹی و بزنس آپریشنز' },
     credential: 'Software Engineer'
+  },
+  {
+    photo: '/team/manan-azam.webp',
+    name: { en: 'Manan Azam', ur: 'منان اعظم' },
+    role: { en: 'Director Business Development', ur: 'ڈائریکٹر بزنس ڈویلپمنٹ' },
+    credential: 'Computer Science'
+  },
+  {
+    photo: '/team/saqib-ali.webp',
+    name: { en: 'Saqib Ali', ur: 'ثاقب علی' },
+    role: { en: 'Head of Software Development', ur: 'سربراہ، سافٹ ویئر ڈویلپمنٹ' },
+    credential: 'Software Engineer'
+  },
+  {
+    photo: '/team/afaq-khurshid.webp',
+    name: { en: 'Afaq Khurshid', ur: 'آفاق خورشید' },
+    role: { en: 'Software Development Manager', ur: 'سافٹ ویئر ڈویلپمنٹ منیجر' },
+    credential: 'Software Engineer'
+  },
+  {
+    photo: '/team/muhammad-husnain-mubashar.webp',
+    name: { en: 'Muhammad Husnain', ur: 'محمد حسنین' },
+    role: { en: 'Business Development Manager', ur: 'بزنس ڈویلپمنٹ منیجر' },
+    credential: 'Computer Science'
   }
 ]

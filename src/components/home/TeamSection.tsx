@@ -29,11 +29,12 @@ export default function TeamSection({ locale, dict }: Props) {
           <p className="mt-4 text-base leading-relaxed text-text-3 sm:text-lg rtl:leading-[2.1]">{dict.body}</p>
         </div>
 
-        <ul className="mt-12 grid grid-cols-1 gap-5 min-[480px]:grid-cols-2 lg:grid-cols-4">
+        {/* flex (not grid) so an unfilled last row is centred */}
+        <ul className="mt-12 flex flex-wrap justify-center gap-5">
           {TEAM.map((member, index) => (
             <li
               key={member.photo + member.name.en}
-              className="reveal group relative overflow-hidden rounded-3xl border border-line bg-surface shadow-[0_1px_2px_rgb(11_18_32/0.04)] transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_28px_60px_-28px_rgb(11_18_32/0.35)]"
+              className="reveal group relative w-full overflow-hidden rounded-3xl min-[480px]:w-[calc((100%-1.25rem)/2)] lg:w-[calc((100%-3.75rem)/4)] border border-line bg-surface shadow-[0_1px_2px_rgb(11_18_32/0.04)] transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_28px_60px_-28px_rgb(11_18_32/0.35)]"
               style={delay((index % 4) * 90)}
             >
               <div className="relative aspect-[4/5] overflow-hidden bg-ink-800">
